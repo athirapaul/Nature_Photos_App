@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <Button
+        android:id="@+id/NatureImagesButton"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:autoLink="all"
+        android:text="@string/Natural_Images"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/SavedImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/SavedImageButton"
+        app:layout_constraintStart_toStartOf="@+id/SavedImageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nature Images" />
+
+    <Button
+        android:id="@+id/SavedImageButton"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/Saved_Images"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/MyFavoritesButton"
+        app:layout_constraintEnd_toEndOf="@+id/MyFavoritesButton"
+        app:layout_constraintStart_toStartOf="@+id/MyFavoritesButton"
+        app:layout_constraintTop_toBottomOf="@+id/NatureImagesButton"
+        tools:text="Saved Images" />
+
+    <Button
+        android:id="@+id/MyFavoritesButton"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="467dp"
+        android:text="@string/My_Favorites"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SavedImageButton"
+        tools:text="My Favorites" />
+
+    <Button
+        android:id="@+id/ShareButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RateButtonId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NatureImagesButton" />
+
+    <Button
+        android:id="@+id/RateButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rate"
+        app:layout_constraintBottom_toBottomOf="@+id/ShareButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/MoreAppsButtonId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ShareButtonId" />
+
+    <Button
+        android:id="@+id/MoreAppsButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/More_Apps"
+        app:layout_constraintBottom_toBottomOf="@+id/RateButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/RateButtonId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
